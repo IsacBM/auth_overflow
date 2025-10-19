@@ -1,0 +1,37 @@
+### signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test2@acme.com",
+    "password": "test",
+    "roles": []
+}
+
+### signup 2
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "isacbm@acme.com",
+    "password": "teste2",
+    "roles": ["admin"]
+}
+
+### signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "test2@acme.com",
+    "password": "test"
+}
+
+### signin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "isacbm@acme.com",
+    "password": "teste2"
+}
